@@ -1,0 +1,26 @@
+* {
+	font-family: "CaskaydiaCove Nerd Font", "Font Awesome 6 Free", sans-serif;
+  	font-size: 12px;
+  	min-height: 0;
+	font-weight: bold;
+	transition: none;
+}
+
+#waybar {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 24px;
+}
+
+.modules-right {
+	margin-right: 24px;
+}
+
+#cpu,
+#custom-cpufreq,
+#custom-temps,
+#wireplumber,
+#network,
+#custom-shutdown {
+  padding: 0 8px;
+}

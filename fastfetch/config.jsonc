@@ -1,0 +1,11 @@
+{
+  "modules": [
+    "title",
+    "os",
+    "kernel",
+    "cpu",
+    "gpu",
+    "memory",
+    "uptime"
+  ]
+}

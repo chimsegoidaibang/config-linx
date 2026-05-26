@@ -1,0 +1,10 @@
+width=600
+height=450
+location=center
+show=drun,run
+prompt=Search...
+matching=fuzzy
+insensitive=true
+allow_images=true
+image_size=32
+no_actions=true
