@@ -1,0 +1,4 @@
+spawn-at-startup "waybar"
+spawn-at-startup "fcitx5"
+spawn-at-startup "awww-daemon"
+spawn-at-startup "sh" "-c" "sleep 1 && awww img ~/Pictures/Wallpaper/wallpaper.jpg"
