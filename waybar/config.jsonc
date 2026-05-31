@@ -4,24 +4,35 @@
   "height": 30,
   "spacing": 6,
   "reload_style_on_change": true,
-  "modules-left": [],
+  "modules-left": ["niri/workspaces","niri/window"],
   "modules-center": ["clock"],
   "modules-right": [
     "cpu",
+    "memory",
     "custom/temps",
     "wireplumber",
     "network",
     "custom/shutdown"
   ],
 
+ "niri/workspaces": {
+    "format": "",
+    "tooltip": false
+}
 
+  },
   "clock": {
     "format": "{:%H:%M}",
     "tooltip": false
   },
 
   "cpu": {
-    "format": "  {usage}%",
+    "format": " {usage}%",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": "󰘚 {percentage}%",
     "tooltip": false
   },
 
@@ -34,29 +45,22 @@
   },
 
   "network": {
-    "format-wifi": "",
+    "format-wifi": "󰖩  {signalStrength}%",
     "format-ethernet": "󰈀",
-    "format-disconnected": "󰤮",
-    "tooltip": false
-  },
-
-  "custom/cpufreq": {
-    "exec": "~/.config/waybar/scripts/cpu_freq.sh",
-    "interval": 5,
-    "format": "⚡ {}",
+    "format-disconnected": "󰖪",
     "tooltip": false
   },
 
   "custom/temps": {
     "exec": "~/.config/waybar/scripts/temps.sh",
-    "interval": 5,
+    "interval": 10,
     "format": " {}",
     "tooltip": false
   },
 
   "custom/shutdown": {
     "format": "⏻",
-    "on-click": "systemctl poweroff",
+    "on-click": "systemctl poweroff -i",
     "tooltip": false
   }
 }

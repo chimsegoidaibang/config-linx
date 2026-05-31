@@ -13,14 +13,56 @@
 }
 
 .modules-right {
-	margin-right: 24px;
+    margin-right: 24px;
 }
 
+#workspaces {
+   
+    border-radius: 9999px;
+    padding: 4px 24px;
+    margin: 4px 8px;
+}
+
+#workspaces button {
+    background-color: #000;
+    border-radius: 9999px;         /* Biến khung hình vuông thành hình tròn */
+    
+    /* Cấu hình kích thước của chấm tròn */
+    min-width: 14px;
+    min-height: 12px;
+    
+    /* Khoảng cách giữa các chấm tròn */
+    margin: 0 6px;
+    padding: 0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* Hiệu ứng mượt */
+}
+
+/* Định dạng riêng cho chấm đang ACTIVE (●) */
+#workspaces button.active {
+    background-color: #cba6f7; /* Đổ đặc màu vào trong để thành chấm đặc */
+       /* Màu viền trùng màu nền */
+    border-radius: 99999px; 
+    /* Nếu muốn chấm active to hơn các chấm khác, hãy tăng kích thước ở đây: */
+    min-width: 48px;
+    min-height: 12px;
+}
+
+/* Hiệu ứng khi di chuột (Hover) qua các chấm */
+#workspaces button:hover {
+    background-color: rgba(137, 180, 250, 0.4); /* Hiện màu mờ khi hover */
+    border-color: #89b4fa;
+}
+
+#clock,
 #cpu,
-#custom-cpufreq,
+#memory,
 #custom-temps,
 #wireplumber,
 #network,
+#tray,
+#custom-updates,
 #custom-shutdown {
-  padding: 0 8px;
+    padding: 0 10px;
+    margin: 2px;
+    border-radius: 8px;
 }
