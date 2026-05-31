@@ -8,7 +8,6 @@
   "modules-center": ["clock"],
   "modules-right": [
     "cpu",
-    "custom/cpufreq",
     "custom/temps",
     "wireplumber",
     "network",
@@ -43,14 +42,14 @@
 
   "custom/cpufreq": {
     "exec": "~/.config/waybar/scripts/cpu_freq.sh",
-    "interval": 2,
+    "interval": 5,
     "format": "⚡ {}",
     "tooltip": false
   },
 
   "custom/temps": {
     "exec": "~/.config/waybar/scripts/temps.sh",
-    "interval": 2,
+    "interval": 5,
     "format": " {}",
     "tooltip": false
   },

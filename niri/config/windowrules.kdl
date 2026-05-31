@@ -40,6 +40,13 @@ window-rule {
 }
 
 window-rule {
+    match app-id="jetbrains-webstorm"
+    open-fullscreen true
+}
+
+
+
+window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }

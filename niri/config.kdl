@@ -6,14 +6,10 @@ cursor {
 }
 
 overview {
-    zoom 0.9
+    zoom 1.0
     backdrop-color "#003300"
     workspace-shadow {
         off
-        //softness 20
-        //spread 10
-        //offset x=0 y=10
-        //color "#00000050"
     }
 }
 
@@ -26,12 +22,12 @@ input {
         xkb {
              layout "us"
         }
-	repeat-delay 250
+	repeat-delay 200
 	repeat-rate 25
     }
 
     mouse {  
-         accel-speed 0.5
+         accel-speed 0.2
          accel-profile "flat"
          scroll-method "no-scroll"
     }
