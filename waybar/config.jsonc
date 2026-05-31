@@ -1,7 +1,7 @@
 {
   "position": "bottom",
   "exclusive": true,
-  "height": 30,
+  "height": 34,
   "spacing": 6,
   "reload_style_on_change": true,
   "modules-left": ["niri/workspaces","niri/window"],
