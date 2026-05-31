@@ -25,31 +25,22 @@
 
 #workspaces button {
     background-color: #000;
-    border-radius: 9999px;         /* Biến khung hình vuông thành hình tròn */
-    
-    /* Cấu hình kích thước của chấm tròn */
-    min-width: 14px;
+    border-radius: 9999px;             min-width: 14px;
     min-height: 12px;
     
-    /* Khoảng cách giữa các chấm tròn */
     margin: 0 6px;
     padding: 0;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); /* Hiệu ứng mượt */
-}
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);}
 
-/* Định dạng riêng cho chấm đang ACTIVE (●) */
 #workspaces button.active {
-    background-color: #cba6f7; /* Đổ đặc màu vào trong để thành chấm đặc */
-       /* Màu viền trùng màu nền */
-    border-radius: 99999px; 
-    /* Nếu muốn chấm active to hơn các chấm khác, hãy tăng kích thước ở đây: */
+    background-color: #cba6f7;    border-radius: 99999px; 
+
     min-width: 48px;
     min-height: 12px;
 }
 
-/* Hiệu ứng khi di chuột (Hover) qua các chấm */
 #workspaces button:hover {
-    background-color: rgba(137, 180, 250, 0.4); /* Hiện màu mờ khi hover */
+    background-color: rgba(137, 180, 250, 0.4); 
     border-color: #89b4fa;
 }
 
@@ -59,8 +50,6 @@
 #custom-temps,
 #wireplumber,
 #network,
-#tray,
-#custom-updates,
 #custom-shutdown {
     padding: 0 10px;
     margin: 2px;

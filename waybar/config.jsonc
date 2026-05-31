@@ -15,12 +15,11 @@
     "custom/shutdown"
   ],
 
- "niri/workspaces": {
+  "niri/workspaces": {
     "format": "",
     "tooltip": false
-}
-
   },
+
   "clock": {
     "format": "{:%H:%M}",
     "tooltip": false
