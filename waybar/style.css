@@ -17,6 +17,7 @@
 }
 
 #workspaces {
+   
     border-radius: 9999px;
     padding: 4px 24px;
     margin: 4px 8px;
@@ -24,18 +25,18 @@
 
 #workspaces button {
     background-color: #000;
-    border-radius: 9999px;
-    min-width: 14px;
-    min-height: 12px;    
-    margin: 0 4px;
+    border-radius: 9999px;             min-width: 14px;
+    min-height: 12px;
+    
+    margin: 0 6px;
     padding: 0;
-}
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);}
 
 #workspaces button.active {
-    background-color: #cba6f7;
-    border-radius: 99999px; 
-    min-width: 48px;
+    background-color: #cba6f7;    border-radius: 99999px; 
 
+    min-width: 48px;
+    min-height: 12px;
 }
 
 #workspaces button:hover {
